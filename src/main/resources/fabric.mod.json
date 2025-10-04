@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "",
+  "authors": [
+    "AuthorExample"
+  ],
+  "contact": {
+  },
+  "license": "LGPLv3",
+  "icon": "assets/${id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.template.platforms.fabric.TempLateFabric"
+    ],
+    "modmenu": [
+      "com.example.template.platforms.fabric.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "template-common.mixins.json",
+    "template-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15",
+    "minecraft": "${minecraft}"
+  }
+}
